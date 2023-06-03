@@ -1,5 +1,6 @@
 import { useParams } from "react-router";
 import { useEffect, useState } from "react";
+import { FETCH_URL } from "../config";
 
 const Details = () =>{
     const params = useParams();
@@ -12,7 +13,7 @@ const Details = () =>{
       },[])
 
       async function callDetails() {
-        const data = await fetch("https://api.tvmaze.com/shows/"+ id)     
+        const data = await fetch( FETCH_URL + id)     
         const json = await data.json();
         console.log(json) 
         setMovieDetail(json)       

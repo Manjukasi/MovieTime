@@ -1,4 +1,4 @@
-export const FETCH_URL = "https://www.tvmaze.com/shows/";
+export const FETCH_URL = "https://api.tvmaze.com/shows/";
 
 
 export const showlist = [
